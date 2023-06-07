@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pameran Buku</title>
+    <style>
+      /* CSS untuk styling gambar */
+      img {width: 200px; height: 300px; border: 1px solid black; padding: 5px;}
+	  body {color: black; background: beige;}
+	h3 {background: beige; color: black; text-align: center;}
+    </style>
+</head>
+<body>
+	<h1 style="color: red; text-align:center;"> PAMERAN BUKU LIBSMART</h1>
+    <h3 style="text-align: center;">Selamat datang di Pameran Buku Libsmart. Kegiatan ini merupakan kegiatan rutin yang kami lakukan setiap satu tahun sekali. <br>Silahkan klik gambar untuk melihat keterangan yang lebih lengkap!.</h3>
+    
+	<div id="book-gallery">
+		<img src="https://pembangunansosial.fisipol.ugm.ac.id/wp-content/uploads/sites/1145/2021/05/filsafat-teras-1.png" alt="Buku 2" onclick="showBookInfo('Buku 2', 'Pengarang: Henry Manampiring<br> Terbitan Pertama: 26 November 2018<br> Halaman: 344 halaman <br> Bahasa: Indonesia<br> Deskripsi: Filosofi Teras, diawali dengan menceritakan tentang sebuah survei kekhawatiran nasional yang semakin masif sekaligus menyajikan tentang sekilas kehidupan si penulis yang dipenuhi oleh emosi negatif yang berlebihan. Dalam buku ini dijelaskan bahwa penyebab emosi negatif atau kecemasan yang berlebihan disebabkan oleh rasio atau pola pikir yang keliru. Pada akhirnya, penulis menyarankan para pembaca untuk memperbaiki pola pikir yang keliru tersebut, dengan salah satu contohnya ialah menerapkan filsafat Stoa (Stoikisme) yang pada buku tersebut kemudian diterjemahkan sebagai Filsafat Teras dalam kehidupan sehari-hari. Dalam buku tersebut, filsafat Stoa digambarkan secara sederhana dengan inti dikotomi kendali nasib manusia, sehingga dari dikotomi kendali tersebut, manusia dapat menentukan hal-hal yang dapat membuatnya bahagia maupun tidak.')" />
+		<img src="https://cdn.gramedia.com/uploads/items/9786020333175_rich-dad-poor-dad-_edisi-revisi_.jpg" alt="Buku 3" onclick="showBookInfo('Buku 3', 'Pengarang: Robert Kiyosaki, Sharon Lechter<br> Terbitan Pertama: 1997<br> Genre: Keuangan pribadi, Nonfiksi<br> Bahasa asli: Inggris <br> Deskripsi: Rich Dad Poor Dad adalah buku tahun 1997 karya Robert Kiyosaki dan Sharon Lechter. Rich Dad, Poor Dad adalah buku yang membahas masalah finansial yang dihadapi banyak orang dikarenakan ajaran keliru orang tua mereka mengenai keuangan, yang juga dialaminya semasa kecil dan remaja. Rich dad poor dad menceritakan seorang anak dimasa kecilnya memiliki dua orang ayah. satu ayah biologis yang ia sebut ayah Miskin dan satunya adalah ayah dari teman baiknya yang kaya raya. Ayah kaya mengajarkan pelajaran tak ternilai harganya tentang uang dan mengajarkannya lewat pengalaman.')" />
+		<img src="https://cdn.gramedia.com/uploads/items/Jika-Kita-Tak-Pernah-Jadi-Apa-apa-Alvi-Syahrin.jpg" alt="Buku 5" onclick="showBookInfo('Buku 5', 'Pengarang: Alvi Syahrin<br> Terbitan Pertama: Februari 2020<br> Genre: Fiksi, Roman<br> Deskripsi: Buku Jika Kita Tak Pernah Jadi Apa-Apa menceritakan tentang kondisi yang mana terkadang realita yang terjadi tidak sesuai dengan ekspektasi kita, tetapi ketika menghadapi kondisi tersebut, kita harus terus bergerak dan terus menjalani hidup. Alvi Syahrin menggunakan sudut pandang orang pertama dalam menulis buku Jika Kita Tak Pernah Jadi Apa-Apa ini. Ia bercerita dengan menempatkan diri, bahwa ia merupakan tokoh yang sedang menghadapi kondisi-kondisi yang mana realita tidak sesuai dengan ekspektasi. Buku Jika Kita Tak Pernah Jadi Apa-Apa dapat menjadi ‘teman’ bagi para pembacanya, yang berbagi cerita tentang masalah yang relevan dengan masalah yang para pembaca sering alami. Buku ini juga dapat dianggap sebagai ‘obat penenang’ atas perasaan galau, sedih, dan bingung, yang sedang dialami pembaca.')"
+	</div>
+    <div id="book-info"></div>
+    <script>
+      // Fungsi untuk menampilkan keterangan buku
+      function showBookInfo(title, info)
+       {var bookInfo = "<h2>" + title + "</h2><p>" + info + "</p>";
+        document.getElementById("book-info").innerHTML = bookInfo;}
+
+    </script>
+  </body>
+</html>
